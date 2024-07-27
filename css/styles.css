@@ -225,7 +225,7 @@ a {
 /* Takeaways */
 .takeaways {
 	background-color: var(--tertiary-color);
-	padding: 4rem 0;
+	padding: 4rem 2rem;
 }
 
 .takeaways .takeaways-intro-flex {
@@ -462,7 +462,7 @@ a {
 
 /* Download */
 #download {
-	padding: 4rem 0;
+	padding: 4rem 2rem;
 	min-height: auto;
 }
 
@@ -477,7 +477,7 @@ a {
 
 /* Footer */
 .footer {
-	padding: 4rem 0;
+	padding: 4rem 2rem;
 }
 
 .footer .footer-flex {
@@ -687,8 +687,8 @@ a {
 	.takeaways .takeaways-grid {
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
 		align-items: center;
-		justify-content: space-evenly;
 	}
 
 	.takeaways-grid .col-1 .takeaway-card,
@@ -778,5 +778,13 @@ a {
 @media (max-width: 375px) {
 	.hero .hero-grid .hero-right img {
 		max-width: 300px;
+	}
+
+	.takeaways .takeaways-grid .col-2 img {
+		max-width: 280px;
+	}
+
+	#download .hero-grid .hero-left p {
+		font-size: 1.15rem;
 	}
 }
