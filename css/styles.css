@@ -141,7 +141,7 @@ a {
 
 /* Hero */
 .hero {
-	padding: 8rem 2rem 0 2rem;
+	padding: 8rem 2rem 4rem 2rem;
 	background: url("../images/header-background.jpg") center center/cover
 		no-repeat;
 	min-height: 100vh;
@@ -650,7 +650,11 @@ a {
 }
 @media (max-width: 992px) {
 	.hero .hero-grid {
-		grid-template-columns: 1fr;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
 	}
 
 	.hero .hero-left {
@@ -771,5 +775,8 @@ a {
 		text-align: center;
 	}
 }
-@media (max-width: 576px) {
+@media (max-width: 375px) {
+	.hero .hero-grid .hero-right img {
+		max-width: 300px;
+	}
 }
